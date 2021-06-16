@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - setuptools >=38.3.0
   run:
-    - dataproperty >=0.49.1
+    - dataproperty >=0.50.1
     - mbstrdecoder >=1.0.0
     - msgfy >=0.1.0
     - pathvalidate >=2.3.0
