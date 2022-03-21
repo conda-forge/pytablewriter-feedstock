@@ -1,5 +1,5 @@
 {% set name = "pytablewriter" %}
-{% set version = "0.64.1" %}
+{% set version = "0.64.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2954d0dd2ac2dd74eaf4a41301017cb7cbc56962d7751a5d78ae4a4127417eb8
+  sha256: 99409d401d6ef5f06d1bc40f265a8e3053afe4cbfbaf709f71124076afb40dbb
 
 build:
   number: 0
