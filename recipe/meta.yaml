@@ -11,25 +11,25 @@ source:
   sha256: 99409d401d6ef5f06d1bc40f265a8e3053afe4cbfbaf709f71124076afb40dbb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
+    - python >=3.6
+    - setuptools
+    - wheel
     - pip
-    - python >=3.6
-    - setuptools >=38.3.0
   run:
-    - dataproperty >=0.49.1
-    - mbstrdecoder >=1.0.0
-    - msgfy >=0.1.0
-    - pathvalidate >=2.3.0
     - python >=3.6
     - setuptools >=38.3.0
-    - tabledata >=1.1.1
-    - tcolorpy >=0.0.5
-    - typepy >=1.1.1
+    - dataproperty >=0.55.0,<2
+    - mbstrdecoder >=1.0.0,<2
+    - pathvalidate >=2.3.0,<3
+    - tabledata >=1.3.0,<2
+    - tcolorpy >=0.0.5,<1
+    - typepy >=1.2.0,<2
 
 test:
   imports:
@@ -54,3 +54,4 @@ about:
 extra:
   recipe-maintainers:
     - basnijholt
+    - ocefpaf
